@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A PROPOS DE MOI</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+      list-style: none;
+    }
+
+    body {
+      font-size: 24px;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background-color: #fff;
+      height: 80px;
+      width: 100%;
+      margin-bottom: 50px;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 15px;
+      align-items: center;
+      justify-content: end;
+      height: 100%;
+      padding-right: 20px;
+    }
+
+    a {
+      color: black;
+    }
+
+    a:hover {
+      text-decoration: underline;
+      text-decoration-color: rgb(0, 0, 0);
+    }
+
+    .bouton,
+    .menu-hidden {
+      display: none;
+    }
+
+    @media (max-width: 800px) {
+      nav {
+        display: none;
+      } .bouton {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 1001;
+  }
+
+  .menu {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 12px 16px;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+
+  .menu:hover {
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(1.05);
+  }
+}
+
+
+      .menu-hidden {
+        display: none;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        padding: 50px 20px;
+        color: white;
+        flex-direction: column;
+        gap: 20px;
+      }
+      
+      .menu-hidden ul {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+      }
+
+      .menu-hidden a {
+        color: white;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .menu-hidden .close {
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .presentation {
+        margin-top: 60px;
+        padding: 1.5rem;
+      }
+
+      .presentation h1 {
+        font-size: 2rem;
+      }
+
+      .presentation p {
+        font-size: 1rem;
+      }
+
+      footer {
+        font-size: 0.8rem;
+      }
+    
+  </style>
+</head>
+<body style="background: linear-gradient(270deg, #1e3c72, #2a5298); color: white;">
+
+  <!-- Barre de navigation classique -->
+  <nav>
+    <ul>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="index.html">A propos de moi</a></li>
+    </ul>
+  </nav>
+
+  <!-- Bouton hamburger (mobile) -->
+  <div class="bouton">
+  <button class="menu">&#9776;</button>
+</div>
+
+  <!-- Menu caché (mobile) -->
+  <div class="menu-hidden">
+    <button class="close">x</button>
+    <ul>
+      <li><a href="contact.html">contact</a></li>
+      <li><a href="bg2.html">Accueil</a></li>
+      <li><a href="index.html">A propos de moi</a></li>
+    </ul>
+  </div>
+
+  <!-- Titre -->
+  <h1 class="shine" style="text-align: center">QUI SUIS-JE ?</h1>
+
+  <!-- Image de profil -->
+  <img
+    src="image.png"
+    alt="ma photo"
+    style="
+      width: 240px;
+      height: 240px;
+      border-radius: 50%;
+      border: 3px solid #fff;
+      object-fit: cover;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    "
+  />
+
+  <!-- Présentation -->
+  <section
+    style="
+      background: #1e3c50;
+      border-radius: 16px;
+      max-width: 800px;
+      margin: 60px auto;
+      padding: 20px;
+      background-color: rgba(255, 255, 255, 0.05);
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+      font-family: arial;
+    "
+  >
+    <p>Je m'appelle Thenene Lubaki Jerry et j'ai 18 ans. je suis né dans la ville de Boma et j'y ai vécu jusqu'à mes 17 ans.</p>
+    <p>J'ai étudié au COMPLEXE SCOLAIRE MONT TSHIKENGE LA CADETTE de l'école maternelle jusqu'à l'obtention de mon diplôme d'État avec 73% aux examens d'État.</p>
+    <p>Actuellement étudiant en informatique à l'Université Protestante au Congo, je m'intéresse à tous les domaines de l'informatique, en particulier aux nouvelles technologies et au développement de logiciels.</p>
+    <p>Je travaille actuellement sur plusieurs petits projets en WordPress, et il m'arrive souvent de programmer en Python et en C.</p>
+  </section>
+
+  <!-- Pied de page -->
+  <footer
+    style="
+      font-size: 24px;
+      padding: 30px;
+      color: #bbb;
+      background: rgba(255, 255, 255, 0.08);
+      font-family: arial;
+    "
+  >
+    <p>Je suis réceptif à tout type de projet. Pour plus d'informations, contactez-moi via :</p>
+    <ul>
+      <li><a href="tel:+243896100461">téléphone</a></li>
+      <li><a href="mailto:thenenejerry@gmail.com" target="_blank">mail</a></li>
+      <li><a href="contact.html" target="_blank">ma page de contact personnelle</a></li>
+    </ul>
+  </footer>
+
+  <!-- JavaScript pour le menu hamburger -->
+  <script>
+    const menuBtn = document.querySelector('.menu');
+    const menuPanel = document.querySelector('.menu-hidden');
+    const closeBtn = document.querySelector('.close');
+
+    menuBtn.addEventListener('click', () => {
+      menuPanel.style.display = 'flex';
+      menuBtn.style.display = 'none';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      menuPanel.style.display = 'none';
+      menuBtn.style.display = 'block';
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* Fond général */
+body {
+    margin: 0;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+  }
+  
+  /* Vague en haut */
+  .top-wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* En-tête */
+  .header {
+    padding: 100px 20px 50px;
+    text-align: center;
+  }
+  
+  .shine-text {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #fff, #ffd700, #fff);
+    background-size: 200% auto;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+  }
+  
+  @keyframes shine {
+    to {
+      background-position: -200% center;
+    }
+  }
+  
+  .slogan {
+    font-size: 20px;
+    margin-top: 10px;
+    color: #e0e0e0;
+  }
+  
+  /* Sections */
+  .section {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.1);
+    border-radius: 16px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.3);
+  }
+  
+  /* Pied de page */
+  .footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+    background-color: rgba(0,0,0,0.3);
+  }
+  
