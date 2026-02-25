@@ -2,12 +2,13 @@
 :root {
     --primary-color: #000000;
     --secondary-color: #6ca9f9;
-    --third-color: rgb(194, 0, 194);
+    --btn-color: #c72fc7;
+    --third-color: #c200c2;
     --text-color: #ffffff;
     --bg-light: #f4f4f4;
     --bg-color: #000;
     --white: #fff;
-    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-main: 'Poppins', sans-serif;
 }
 
 /* ===== RESET & BASE ===== */
@@ -15,6 +16,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -31,14 +35,10 @@ h1, h2, h3 {
 
 a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--white);
 }
 ul {
     padding: 0 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 15px;
     list-style: none;
 }
 
@@ -58,29 +58,51 @@ img {
     top: 0;
     z-index: 1000;
 }
+#nav-bar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+#nav-bar ul li{
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+#nav-bar a{
+    color: var(--white);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+#nav-bar a:hover{
+    color: var(--third-color);
+    text-shadow: 0 0 10px var(--text-color);
+}
+#nav-bar .active{
+    color: var(--third-color);
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+#nav-bar .active:hover{
+    color: var(--text-color);
+    font-weight: bold;
+    text-shadow: 0 0 10px var(--text-color);
+}
+/* ===== HERO SECTION ===== */
 .logo img{
     width: 50px;
     height: 50px;
     margin-left: 20px;
     border-radius: 50%;
+    transition: all 0.3s ease;
 }
-.active {
-    color: var(--third-color);
-    font-weight: bold;
-}
-.not-active {
-    color: var(--text-color);
-    padding: 0 0;
-    display: block;
-    transition: text-shadow 0.3s ease;
+.logo img:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 10px var(--white);
 }
 
-.not-active:hover {
-    border-radius: 20%;
-    color: var(--third-color);
-    text-shadow: 0 0 15px var(--text-color);
-}
 #hero{
+    position: relative;
     background: url('../Images/hero.jpg') no-repeat center center/cover;
     height: 100vh;
     display: flex;
@@ -89,6 +111,47 @@ img {
     align-items: center;
     color: var(--white);
     text-align: center;
-    overlay: var(--text-color);
-    opacity: 0.9;
+}
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* ajuste l'opacité */
+    z-index: 1;
+}
+#hero > * {
+    position: relative;
+    z-index: 2;
+}
+/* ===== MAIN CONTENT ===== */
+/* BOUTON */ 
+.btn {
+    display: inline-block;
+    background: var(--btn-color);
+    color: var(--white);
+    padding: 0.8rem 2rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px var(--btn-color);
+}
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    #nav-bar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #nav-bar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    #hero h1 {
+        font-size: 2rem;
+    }
 }
