@@ -1,0 +1,94 @@
+/* ===== VARIABLES ===== */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #6ca9f9;
+    --third-color: rgb(194, 0, 194);
+    --text-color: #ffffff;
+    --bg-light: #f4f4f4;
+    --bg-color: #000;
+    --white: #fff;
+    --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===== RESET & BASE ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: var(--bg-color);
+}
+
+h1, h2, h3 {
+    margin-bottom: 0.5em;
+    color: var(--secondary-color);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+ul {
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+/* ===== NAVIGATION ===== */
+#nav-bar{
+    background-color: #000000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 20px;
+    border-radius: 50%;
+}
+.active {
+    color: var(--third-color);
+    font-weight: bold;
+}
+.not-active {
+    color: var(--text-color);
+    padding: 0 0;
+    display: block;
+    transition: text-shadow 0.3s ease;
+}
+
+.not-active:hover {
+    border-radius: 20%;
+    color: var(--third-color);
+    text-shadow: 0 0 15px var(--text-color);
+}
+#hero{
+    background: url('../Images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    overlay: var(--text-color);
+    opacity: 0.9;
+}
