@@ -5,60 +5,219 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="/Style/Primary style.css" />
+    <link rel="stylesheet" href="Style/main.css" />
     <title>Compétences</title>
 </head>
 
 <body>
-    <nav id="nav-bar" aria-label="Menu prinicipal">
+    <nav id="nav-bar" aria-label="Menu principal">
         <span class="logo">
-            <img src="/Images/logo.jpg" alt="Logo du portfolio" />
+            <img src="Images/logo.jpg" alt="Logo du portfolio" />
         </span>
         <ul>
-            <li><a href="index.html" class="not-active">Accueil</a></li>
-            <li><a href="apropos.html" class="not-active">Mon histoire</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">Mon histoire</a></li>
             <li><a href="competences.html" class="active">Compétences</a></li>
-            <li><a href="projets.html" class="not-active">Mes projets</a></li>
-            <li><a href="contact.html" class="not-active">Me Contactez</a></li>
+            <li><a href="projets.html">Mes projets</a></li>
+            <li><a href="contact.html">Me Contacter</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="competences-page">
         <header id="description-competence">
-            <p class="intro-competence">Voici les compétences techniques et soft skills que j'ai acquises au cours de mon parcours professionnel et académique.</p>
+            <h1>Mes compétences</h1>
+            <p class="intro-competence">Un aperçu des technologies, outils et savoir-être que j'ai développés au fil de mon parcours académique et professionnel.</p>
         </header>
-        <section id="competences-container">
-            <div id="technique-container">
-                <h2>Mes Compétences techniques</h2>
-                <ul>
-                    <li><i class="fa-brands fa-html5"></i> HTML/CSS</li>
-                    <li><i class="fa-brands fa-js"></i> JavaScript</li>
-                    <li><i class="fa-brands fa-python"></i> Python</li>
-                    <li><i class="fa-brands fa-git-alt"></i> Git</li>
-                    <li><i class="fa-solid fa-database"></i> SQL</li>
-                    <li><i class="fa-solid fa-code"></i> C / C++</li>
-                    <li><i class="fa-brands fa-wordpress"></i> WordPress</li>
-                    <li><i class="fa-brands fa-github"></i> GitHub</li>
-                    <li><i class="fa-solid fa-bug"></i> Débogage</li>
-                </ul>
+
+        <!-- Tech Stack - Mise en avant visuelle -->
+        <section class="tech-stack-section fade-in-section">
+            <h2>Tech Stack</h2>
+            <p class="section-subtitle">Technologies que j'utilise au quotidien</p>
+            <div class="tech-stack-grid">
+                <div class="tech-card">
+                    <i class="fa-brands fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-brands fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-solid fa-database"></i>
+                    <span>SQL</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span>C / C++</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-brands fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-brands fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="tech-card">
+                    <i class="fa-brands fa-wordpress"></i>
+                    <span>WordPress</span>
+                </div>
             </div>
-            <div id="soft-skills">
-                <h2>Soft Skills</h2>
-                <ul>
-                    <li><i class="fa-solid fa-comment"></i> Communication</li>
-                    <li><i class="fa-solid fa-users"></i> Travail d'équipe</li>
-                    <li><i class="fa-solid fa-calendar"></i> Organisation</li>
-                    <li><i class="fa-solid fa-arrows-rotate"></i> Adaptabilité</li>
-                    <li><i class="fa-solid fa-lightbulb"></i> Résolution de problèmes</li>
-                    <li><i class="fa-solid fa-people-group"></i> Leadership</li>
-                    <li><i class="fa-solid fa-handshake"></i> Collaboration</li>
-                </ul>
+        </section>
+
+        <!-- Barres de progression par catégorie -->
+        <section class="skills-progress-section fade-in-section">
+            <h2>Niveau de maîtrise</h2>
+            <p class="section-subtitle">Auto-évaluation basée sur mes projets et formations</p>
+
+            <div class="skills-categories">
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-laptop-code"></i> Développement Web</h3>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>HTML / CSS</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="90" style="width: 0%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>JavaScript</span>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="70" style="width: 0%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>WordPress</span>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="65" style="width: 0%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-terminal"></i> Langages & Logiciels</h3>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>Python</span>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="75" style="width: 0%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>C / C++</span>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="70" style="width: 0%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>SQL</span>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="65" style="width: 0%"></div></div>
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3><i class="fa-solid fa-screwdriver-wrench"></i> Outils de développement</h3>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>Git / GitHub</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="85" style="width: 0%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>Débogage</span>
+                            <span class="skill-level">Avancé</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="80" style="width: 0%"></div></div>
+                    </div>
+                    <div class="skill-bar-item">
+                        <div class="skill-label">
+                            <span>Gestion de projet</span>
+                            <span class="skill-level">Intermédiaire</span>
+                        </div>
+                        <div class="skill-bar"><div class="skill-fill" data-level="70" style="width: 0%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soft Skills - Cartes avec descriptions -->
+        <section class="soft-skills-section fade-in-section">
+            <h2>Savoir-être</h2>
+            <p class="section-subtitle">Compétences relationnelles et comportementales</p>
+            <div class="soft-skills-grid">
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon"><i class="fa-solid fa-comments"></i></div>
+                    <h4>Communication</h4>
+                    <p>Exprimer mes idées clairement, écouter activement et m'adapter à mon interlocuteur.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon"><i class="fa-solid fa-people-group"></i></div>
+                    <h4>Travail d'équipe</h4>
+                    <p>Collaborer efficacement, partager les connaissances et atteindre des objectifs communs.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon"><i class="fa-solid fa-calendar-check"></i></div>
+                    <h4>Organisation</h4>
+                    <p>Planifier mes tâches, respecter les délais et prioriser selon les objectifs.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon"><i class="fa-solid fa-arrows-rotate"></i></div>
+                    <h4>Adaptabilité</h4>
+                    <p>M'intégrer rapidement à de nouveaux contextes et évoluer avec les technologies.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                    <h4>Résolution de problèmes</h4>
+                    <p>Analyser une situation, identifier les causes et proposer des solutions créatives.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h4>Leadership</h4>
+                    <p>Mobiliser une équipe, déléguer et accompagner les autres vers la réussite.</p>
+                </div>
+                <div class="soft-skill-card">
+                    <div class="soft-skill-icon"><i class="fa-solid fa-handshake"></i></div>
+                    <h4>Collaboration</h4>
+                    <p>Partager des responsabilités, recevoir et donner du feedback constructif.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- En cours d'acquisition -->
+        <section class="learning-section fade-in-section">
+            <h2><i class="fa-solid fa-graduation-cap"></i> En formation</h2>
+            <p class="section-subtitle">Technologies et concepts que j'approfondis actuellement</p>
+            <div class="learning-tags">
+                <span class="learning-tag">React / Vue.js</span>
+                <span class="learning-tag">Node.js</span>
+                <span class="learning-tag">API REST</span>
+                <span class="learning-tag">CI/CD</span>
+                <span class="learning-tag">Cloud (AWS/GCP)</span>
+                <span class="learning-tag">Tests unitaires</span>
             </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 Jerry Lubaki. Tous droits réservés.</p>
     </footer>
+    <button id="back-to-top" title="Retour en haut">↑</button>
     <script src="Script/Script.js"></script>
+    <script src="Script/animations.js"></script>
 </body>
 
 </html>

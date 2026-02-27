@@ -4,22 +4,23 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Style/Primary style.css" />
+    <link rel="stylesheet" href="Style/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <title>Accueil</title>
+    <title>Accueil - Jerry Lubaki</title>
 </head>
 
 <body>
-    <nav id="nav-bar">
+    <nav id="nav-bar" aria-label="Menu principal">
         <span class="logo">
-            <img src="/Images/logo.jpg" alt="Logo du portfolio" />
+            <img src="Images/logo.jpg" alt="Logo du portfolio" />
         </span>
         <ul>
             <li><a href="index.html" class="active">Accueil</a></li>
             <li><a href="apropos.html">Mon histoire</a></li>
-            <li><a href="competences.html" >Compétences</a></li>
-            <li><a href="projets.html" >Mes projets</a></li>
-            <li><a href="contact.html" >Me Contacter</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="projets.html">Mes projets</a></li>
+            <li><a href="contact.html">Me Contacter</a></li>
         </ul>
     </nav>
     <main>
@@ -30,15 +31,37 @@
                     <span class="hero-subtitle">étudiant en informatique appliquée</span>
                 </h1>
                 <p class="hero-description">
-                    Venez découvrir mon Univers.
-
+                    Venez découvrir mon univers — un mélange de code, créativité et passion pour la technologie.
                 </p>
-                <a href="#presentation" class="btn">Commencer</a>
+                <div class="hero-cta">
+                    <a href="#presentation" class="btn">Commencer</a>
+                    <a href="projets.html" class="btn btn-outline">Voir mes projets</a>
+                </div>
             </div>
-
-            
         </section>
-        <section id="presentation">
+
+        <!-- Statistiques rapides -->
+        <section class="stats-section fade-in-section">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fa-solid fa-folder-open"></i>
+                    <span class="stat-number">3+</span>
+                    <span class="stat-label">Projets réalisés</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-code"></i>
+                    <span class="stat-number">9+</span>
+                    <span class="stat-label">Technologies maîtrisées</span>
+                </div>
+                <div class="stat-card">
+                    <i class="fa-solid fa-graduation-cap"></i>
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Soft skills développées</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="presentation" class="fade-in-section">
             <h2>Bienvenue sur mon portfolio</h2>
             <p>
                 Je suis Jerry Lubaki, un étudiant passionné d'informatique appliquée. Ce
@@ -46,14 +69,77 @@
                 parcours académique. N'hésitez pas à explorer les différentes sections
                 pour en savoir plus sur moi et mes réalisations.
             </p>
-            <a href="apropos.html" class="btn">En savoir plus</a>
+            <a href="apropos.html" class="btn">En savoir plus sur moi</a>
+        </section>
+
+        <!-- Ce que je fais -->
+        <section class="services-section fade-in-section">
+            <h2>Ce que je fais</h2>
+            <p class="section-subtitle">Mes domaines d'expertise et d'intérêt</p>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
+                    <h3>Développement Web</h3>
+                    <p>Création de sites et applications web responsive avec HTML, CSS, JavaScript et WordPress.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-terminal"></i></div>
+                    <h3>Programmation</h3>
+                    <p>Développement d'applications avec Python, C/C++ et bases de données SQL.</p>
+                </div>
+                <div class="service-card">
+                    <div class="service-icon"><i class="fa-solid fa-puzzle-piece"></i></div>
+                    <h3>Résolution de problèmes</h3>
+                    <p>Analyse, débogage et conception de solutions techniques adaptées aux besoins.</p>
+                </div>
+            </div>
+            <a href="competences.html" class="btn">Découvrir toutes mes compétences</a>
+        </section>
+
+        <!-- Aperçu des projets -->
+        <section class="projects-preview fade-in-section">
+            <h2>Projets récents</h2>
+            <p class="section-subtitle">Un aperçu de mes réalisations</p>
+            <div class="projects-preview-grid">
+                <a href="projets.html#projet-1" class="preview-card">
+                    <div class="preview-image">
+                        <img src="Images/project1.jpg" alt="Projet - Application de gestion de tâches" loading="lazy" />
+                        <span class="preview-tech">HTML · CSS · JS · PHP</span>
+                    </div>
+                    <h4>Application de gestion de tâches</h4>
+                </a>
+                <a href="projets.html#projet-2" class="preview-card">
+                    <div class="preview-image">
+                        <img src="Images/project2.png" alt="Projet - C++" loading="lazy" />
+                        <span class="preview-tech">C++</span>
+                    </div>
+                    <h4>Projet de développement C++</h4>
+                </a>
+                <a href="projets.html#projet-3" class="preview-card">
+                    <div class="preview-image">
+                        <img src="Images/project3.jpg" alt="Projet - Portfolio" loading="lazy" />
+                        <span class="preview-tech">HTML · CSS · JS</span>
+                    </div>
+                    <h4>Site web de portfolio</h4>
+                </a>
+            </div>
+            <a href="projets.html" class="btn">Voir tous mes projets</a>
+        </section>
+
+        <!-- Appel à l'action -->
+        <section class="cta-section fade-in-section">
+            <h2>Prêt à collaborer ?</h2>
+            <p>Vous avez un projet en tête ou souhaitez simplement échanger ? N'hésitez pas à me contacter.</p>
+            <a href="contact.html" class="btn">Me contacter</a>
         </section>
     </main>
 
     <footer>
         <p>&copy; 2026 Jerry Lubaki. Tous droits réservés.</p>
     </footer>
+    <button id="back-to-top" title="Retour en haut">↑</button>
     <script src="Script/Script.js"></script>
+    <script src="Script/animations.js"></script>
 </body>
 
 </html>

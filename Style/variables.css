@@ -1,0 +1,22 @@
+/* ===== VARIABLES ===== */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #6ca9f9;
+    --btn-color: #c72fc7;
+    --third-color: #c200c2;
+    --text-color: #ffffff;
+    --text-muted: #b0b0b0;
+    --bg-light: #111;
+    --bg-card: #0d0d0d;
+    --bg-color: #000;
+    --white: #fff;
+    --font-main: 'Poppins', sans-serif;
+    --radius-sm: 8px;
+    --radius-md: 16px;
+    --radius-lg: 24px;
+    --radius-xl: 32px;
+    --shadow-sm: 0 4px 20px rgba(0,0,0,0.4);
+    --shadow-md: 0 8px 32px rgba(0,0,0,0.5);
+    --shadow-glow: 0 0 40px rgba(108, 169, 249, 0.15), 0 0 80px rgba(199, 47, 199, 0.08);
+    --transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
