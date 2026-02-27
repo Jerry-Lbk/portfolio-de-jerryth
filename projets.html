@@ -4,109 +4,185 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Style/Primary style.css" />
-    <title>Mes projets</title>
+    <link rel="stylesheet" href="Style/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Mes projets - Jerry Lubaki</title>
 </head>
 
 <body>
-    <nav id="nav-bar">
+    <nav id="nav-bar" aria-label="Menu principal">
         <span class="logo">
-            <img src="Images/logo.png" alt="Logo du portfolio" />
+            <img src="Images/logo.jpg" alt="Logo du portfolio" />
         </span>
         <ul>
-             ><a href="index.html">Accueil</a></>
-            <li><a href="apropos.html" >Mon histoire</a></li>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="apropos.html">Mon histoire</a></li>
             <li><a href="competences.html">Compétences</a></li>
             <li><a href="projets.html" class="active">Mes projets</a></li>
-            <li><a href="contact.html" >Me contacter</a></li>
+            <li><a href="contact.html">Me Contacter</a></li>
         </ul>
     </nav>
-    <main>
-        <section id="projets">
-            <div id="projets-container">
-                <h2>Mes projets</h2>
-                <div id="intro">
-                    <p class="text-intro">
-                        Bienvenue dans la section de mes projets ! Ici, vous trouverez une
-                        sélection de mes réalisations les plus significatives dans le
-                        domaine de l'informatique appliquée. Chaque projet présenté ici
-                        reflète mon engagement envers l'innovation, la créativité et la
-                        résolution de problèmes complexes à travers la technologie.
-                    </p>
-                    <p class="text-intro">
-                        Que ce soit des applications web, des projets de développement de
-                        logiciels, ou des initiatives de recherche, chaque projet a été
-                        une opportunité pour moi de mettre en pratique mes compétences et
-                        de collaborer avec d'autres passionnés de technologie. Je suis
-                        fier de partager ces projets avec vous, et j'espère qu'ils vous
-                        donneront un aperçu de mon parcours et de mes réalisations dans le
-                        domaine de l'informatique appliquée.
-                    </p>
-                    <p class="text-intro">
-                        N'hésitez pas à explorer les détails de chaque projet pour en
-                        savoir plus sur les technologies utilisées, les défis rencontrés,
-                        et les solutions que j'ai développées. Je suis toujours à la
-                        recherche de nouvelles opportunités pour apprendre et grandir en
-                        tant que professionnel de l'informatique, et je suis enthousiaste
-                        à l'idée de partager mes projets avec vous.
-                    </p>
+    <main class="projets-page">
+        <header class="projects-header fade-in-section">
+            <span class="projects-label">Portfolio</span>
+            <h1>Mes projets</h1>
+            <p class="projects-intro">
+                Une sélection de réalisations où j'ai mis en pratique mes compétences en développement web et logiciel. 
+                Chaque projet présente un défi, une approche et des apprentissages.
+            </p>
+            <div class="projects-stats">
+                <span><strong>3</strong> projets</span>
+                <span class="separator">•</span>
+                <span>Web & Logiciel</span>
+            </div>
+        </header>
+
+        <!-- Projet mis en avant -->
+        <section class="featured-project fade-in-section" id="projet-3">
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="Images/project3.jpg" alt="Site web de portfolio - Jerry Lubaki" loading="lazy" />
+                    <div class="featured-overlay">
+                        <span class="featured-number">01</span>
+                        <div class="featured-links">
+                            <a href="#" class="featured-link" title="Voir le projet en direct">
+                                <i class="fa-solid fa-external-link"></i> Voir
+                            </a>
+                            <a href="#" class="featured-link" title="Code source sur GitHub">
+                                <i class="fa-brands fa-github"></i> Code
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <!--carte 1-->
-                <div id="project-grid">
-                    <h3>Mes projets récents</h3>
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="Images/project1.jpg" alt="Projet 1" />
-                        </div>
-                        <h4>Projet 1: Application de gestion de tâches</h4>
-                        <p class="description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        </p>
-                        <div class="project-technologies">Technologies utilisées: HTML, CSS, JavaScript, PHP</div>
-                        <div class="project-links">
-                            <a href="#" class="single-link">Voir le projet</a>
-                            <a href="#" class="single-link">Code source</a>
-                        </div>
+                <div class="featured-info">
+                    <span class="project-meta"><i class="fa-solid fa-calendar"></i> 2025</span>
+                    <span class="project-meta"><i class="fa-solid fa-user"></i> Développeur full stack</span>
+                    <h2>Site web de portfolio</h2>
+                    <p class="featured-description">
+                        Portfolio personnel avec design moderne, animations fluides et structure modulaire. 
+                        Mise en avant des compétences, projets et parcours avec une expérience utilisateur soignée.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                        <span>Design responsive</span>
                     </div>
-                    <!--carte 2-->
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="Images/project2.png" alt="Projet 2" />
-                        </div>
-                        <h4>Projet 2: Lorem ipsum dolor sit amet.</h4>
-                        <p class="description">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                        </p>
-                        <div class="project-technologies">Technologies utilisées: C++</div>
-                        <div class="project-links">
-                            <a href="#" class="single-link">Voir le projet</a>
-                            <a href="#" class="single-link">Code source</a>
-                        </div>
-                    </div>
-                    <!--carte 3-->
-                    <div class="project-card">
-                        <div class="card-image">
-                            <img src="Images/project3.jpg" alt="Projet 3" />
-                        </div>
-                        <h4>Projet 3: Site web de portfolio</h4>
-                        <p class="description">
-                            Un site web de portfolio complet avec des animations et des
-                            interactions.
-                        </p>
-                        <div class="project-technologies">Technologies utilisées: HTML, CSS, JavaScript</div>
-                        <div class="project-links">
-                            <a href="#" class="single-link">Voir le projet</a>
-                            <a href="#" class="single-link">Code source</a>
-                        </div>
-                    </div>
+                    <a href="index.html" class="btn">Visiter le site</a>
                 </div>
             </div>
+        </section>
+
+        <!-- Grille des autres projets -->
+        <section class="projects-grid-section fade-in-section">
+            <h2 class="section-title">Autres projets</h2>
+            
+            <article class="project-card fade-in-section" id="projet-1">
+                <div class="card-image">
+                    <img src="Images/project1.jpg" alt="Application de gestion de tâches" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="project-number">02</span>
+                        <div class="card-actions">
+                            <a href="#" class="card-action-btn" title="Voir le projet"><i class="fa-solid fa-external-link"></i></a>
+                            <a href="#" class="card-action-btn" title="Code source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-content">
+                    <div class="project-card-meta">
+                        <span class="project-year">2025</span>
+                        <span class="project-type">Web App</span>
+                    </div>
+                    <h3>Application de gestion de tâches</h3>
+                    <p class="description">
+                        Application web permettant de créer, organiser et suivre des tâches quotidiennes 
+                        avec une interface intuitive et une persistance des données.
+                    </p>
+                    <div class="tech-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>PHP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="single-link"><i class="fa-solid fa-up-right-from-square"></i> Projet</a>
+                        <a href="#" class="single-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+
+            <article class="project-card fade-in-section" id="projet-2">
+                <div class="card-image">
+                    <img src="Images/project2.png" alt="Projet C++" loading="lazy" />
+                    <div class="card-overlay">
+                        <span class="project-number">03</span>
+                        <div class="card-actions">
+                            <a href="#" class="card-action-btn" title="Voir le projet"><i class="fa-solid fa-external-link"></i></a>
+                            <a href="#" class="card-action-btn" title="Code source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card-content">
+                    <div class="project-card-meta">
+                        <span class="project-year">2025</span>
+                        <span class="project-type">Logiciel</span>
+                    </div>
+                    <h3>Projet de développement C++</h3>
+                    <p class="description">
+                        Application développée en C++ appliquant les concepts de programmation orientée objet, 
+                        gestion mémoire et bonnes pratiques de développement logiciel.
+                    </p>
+                    <div class="tech-tags">
+                        <span>C++</span>
+                        <span>POO</span>
+                        <span>Algorithme</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="single-link"><i class="fa-solid fa-up-right-from-square"></i> Projet</a>
+                        <a href="#" class="single-link"><i class="fa-brands fa-github"></i> Code</a>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- Projets en cours -->
+        <section class="upcoming-section fade-in-section">
+            <h2 class="section-title"><i class="fa-solid fa-hourglass-half"></i> En cours de développement</h2>
+            <p class="section-subtitle">Projets sur lesquels je travaille actuellement</p>
+            <div class="upcoming-grid">
+                <div class="upcoming-card">
+                    <span class="upcoming-badge">En cours</span>
+                    <i class="fa-solid fa-server"></i>
+                    <h4>API REST</h4>
+                    <p>Développement d'une API RESTful pour un projet personnel avec Node.js ou Python.</p>
+                </div>
+                <div class="upcoming-card">
+                    <span class="upcoming-badge">Exploration</span>
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h4>Application mobile</h4>
+                    <p>Découverte du développement cross-platform avec React Native ou Flutter.</p>
+                </div>
+                <div class="upcoming-card">
+                    <span class="upcoming-badge">Prévu</span>
+                    <i class="fa-solid fa-users"></i>
+                    <h4>Projet collaboratif</h4>
+                    <p>Participation à un projet open source ou travail en équipe sur une application.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section class="projects-cta fade-in-section">
+            <p>Vous avez un projet en tête ?</p>
+            <a href="contact.html" class="btn">Discutons-en</a>
         </section>
     </main>
     <footer>
         <p>&copy; 2026 Jerry Lubaki. Tous droits réservés.</p>
     </footer>
+    <button id="back-to-top" title="Retour en haut">↑</button>
     <script src="Script/Script.js"></script>
+    <script src="Script/animations.js"></script>
 </body>
 
 </html>

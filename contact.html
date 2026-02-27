@@ -5,39 +5,57 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-    <link rel="stylesheet" href="/Style/Primary style.css" />
-    <title>Me contacter</title>
+    <link rel="stylesheet" href="Style/main.css" />
+    <title>Me contacter - Jerry Lubaki</title>
 </head>
 
 <body>
     <nav id="nav-bar" aria-label="Menu principal">
         <span class="logo">
-            <img src="Images/logo.png" alt="Logo du portfolio" />
+            <img src="Images/logo.jpg" alt="Logo du portfolio" />
         </span>
         <ul>
             <li><a href="index.html">Accueil</a></li>
             <li><a href="apropos.html">Mon histoire</a></li>
-            <li><a href="competences.html" >Compétences</a></li>
+            <li><a href="competences.html">Compétences</a></li>
             <li><a href="projets.html">Mes projets</a></li>
-            <li><a href="contact.html" class="active">Me Contactez</a></li>
+            <li><a href="contact.html" class="active">Me Contacter</a></li>
         </ul>
     </nav>
-        <main>
-            <section id="contact">
-                <div id="contact-container">
-                    <h2>Me contacter</h2>
-                    <p class="contact-description">
-                        Pour moi, la communication est essentielle pour établir des connexions significatives et
-                        collaborer
-                        efficacement. Si vous souhaitez me contacter pour discuter de projets, poser des questions ou
-                        simplement
-                        échanger des idées, n'hésitez pas à utiliser les informations ci-dessous. Je suis ouvert à
-                        toutes
-                        les
-                        opportunités de collaboration et j'ai hâte d'entendre parler de vous !
-                    </p>
-                    <div id="contact-form">
-                        <form action="submit" method="post">
+    <main class="contact-page">
+        <header class="page-header fade-in-section">
+            <h1>Me contacter</h1>
+            <p class="page-subtitle">Une idée de projet, une question ou simplement un échange ? Parlons-en !</p>
+        </header>
+
+        <!-- Pourquoi me contacter -->
+        <section class="contact-reasons fade-in-section">
+            <div class="reason-card">
+                <i class="fa-solid fa-briefcase"></i>
+                <h4>Projets & collaboration</h4>
+                <p>Vous cherchez un développeur pour votre projet web ou logiciel ?</p>
+            </div>
+            <div class="reason-card">
+                <i class="fa-solid fa-comments"></i>
+                <h4>Échange & conseil</h4>
+                <p>Une question technique ou un besoin de conseil en développement ?</p>
+            </div>
+            <div class="reason-card">
+                <i class="fa-solid fa-handshake"></i>
+                <h4>Opportunités</h4>
+                <p>Stage, alternance ou opportunité de carrière en informatique ?</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div id="contact-container">
+                <p class="contact-description">
+                    La communication est essentielle pour collaborer efficacement. Que ce soit pour discuter d'un projet,
+                    poser des questions ou échanger des idées, n'hésitez pas à utiliser le formulaire ou les coordonnées
+                    ci-dessous. Je suis ouvert aux opportunités de collaboration !
+                </p>
+                <div id="contact-form" class="fade-in-section">
+                    <form action="#" method="post">
                             <label for="name" class="form-label">Nom :</label>
                             <input type="text" id="name" name="name" required />
 
@@ -50,15 +68,16 @@
                             <button type="submit">Envoyer</button>
                         </form>
                     </div>
-                    <div id="contact-info">
+                    <div id="contact-info" class="fade-in-section">
                         <h3>Informations de contact</h3>
                         <div id="contact-link">
                             <ul>
-                                <li><i class="fa-solid fa-envelope"></i> Email :<a href="mailto:thenenejerry@gmail.com"> thenenejerry@gmail.com</a></li>
-                                <li><i class="fa-solid fa-phone"></i> Téléphone : +1 (263) 880 6203</li>
-                                <li><i class="fa-brands fa-linkedin"></i> LinkedIn : linkedin.com/in/jerry-lubaki</li>
+                                <li><i class="fa-solid fa-envelope"></i> <a href="mailto:thenenejerry@gmail.com">thenenejerry@gmail.com</a></li>
+                                <li><i class="fa-solid fa-phone"></i> +1 (263) 880 6203</li>
+                                <li><i class="fa-brands fa-linkedin"></i> <a href="https://linkedin.com/in/jerry-lubaki" target="_blank" rel="noopener noreferrer">LinkedIn : jerry-lubaki</a></li>
                             </ul>
                         </div>
+                        <p class="contact-availability"><i class="fa-solid fa-clock"></i> Réponse sous 24-48h</p>
                     </div>
                 </div>
             </section>
@@ -66,7 +85,9 @@
     <footer>
         <p>&copy; 2026 Jerry Lubaki. Tous droits réservés.</p>
     </footer>
+    <button id="back-to-top" title="Retour en haut">↑</button>
     <script src="Script/Script.js"></script>
+    <script src="Script/animations.js"></script>
 </body>
 
 </html>

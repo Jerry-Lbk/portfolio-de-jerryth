@@ -4,79 +4,137 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/Style/Primary style.css" />
-    <title>L'histoire de Jerry Lubaki</title>
+    <link rel="stylesheet" href="Style/main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+    <title>Mon histoire - Jerry Lubaki</title>
 </head>
 
 <body>
-    <nav id="nav-bar">
+    <nav id="nav-bar" aria-label="Menu principal">
         <span class="logo">
-            <img src="/Images/logo.png" alt="Logo du portfolio" />
+            <img src="Images/logo.jpg" alt="Logo du portfolio" />
         </span>
         <ul>
-            <li><a href="index.html" >Accueil</a></li>
+            <li><a href="index.html">Accueil</a></li>
             <li><a href="apropos.html" class="active">Mon histoire</a></li>
-            <li><a href="competences.html" >Compétences</a></li>
-            <li><a href="projets.html" >Mes projets</a></li>
-            <li><a href="contact.html" >Me Contacter</a></li>
+            <li><a href="competences.html">Compétences</a></li>
+            <li><a href="projets.html">Mes projets</a></li>
+            <li><a href="contact.html">Me Contacter</a></li>
         </ul>
     </nav>
-    <main>
+    <main class="apropos-page">
+        <header class="page-header fade-in-section">
+            <h1>Mon histoire</h1>
+            <p class="page-subtitle">Le parcours qui m'a conduit jusqu'ici et ma vision pour demain</p>
+        </header>
+
+        <!-- En bref -->
+        <section class="about-highlights fade-in-section">
+            <div class="highlight-card">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <h3>Formation</h3>
+                <p>Informatique appliquée</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Spécialité</h3>
+                <p>Développement web & logiciel</p>
+            </div>
+            <div class="highlight-card">
+                <i class="fa-solid fa-rocket"></i>
+                <h3>Objectif</h3>
+                <p>Innovation & créativité tech</p>
+            </div>
+        </section>
+
         <section id="apropos">
             <div id="apropos-container">
-                <h2>Mon histoire</h2>
-                <p>
-                    Je m'appelle Jerry Lubaki, et je suis un étudiant en informatique
-                    appliquée. Depuis mon plus jeune âge, j'ai toujours été fasciné par
-                    la technologie et la manière dont elle peut transformer notre
-                    quotidien. C'est cette passion qui m'a conduit à poursuivre des
-                    études en informatique, où j'ai pu développer mes compétences et
-                    approfondir mes connaissances dans ce domaine en constante
-                    évolution.
-                </p>
-                <p>
-                    Mon parcours académique m'a permis d'acquérir une solide base en
-                    programmation, en développement web, et en gestion de projets
-                    informatiques. J'ai également eu l'opportunité de travailler sur
-                    plusieurs projets passionnants, qui m'ont permis de mettre en
-                    pratique mes compétences et de collaborer avec d'autres passionnés
-                    de technologie.
-                </p>
-                <p>
-                    En dehors de mes études, je suis également un fervent défenseur de
-                    l'innovation et de la créativité dans le domaine de l'informatique.
-                    Je crois fermement que la technologie peut être utilisée pour
-                    résoudre des problèmes complexes et améliorer la vie des gens, et je
-                    suis déterminé à contribuer à cette mission à travers mon travail et
-                    mes projets futurs.
-                </p>
-                <p>
+                <h2>Mon parcours</h2>
+                <div class="story-block fade-in-section">
+                    <p class="text-intro">
+                        Je m'appelle Jerry Lubaki, et je suis un étudiant en informatique
+                        appliquée. Depuis mon plus jeune âge, j'ai toujours été fasciné par
+                        la technologie et la manière dont elle peut transformer notre
+                        quotidien. C'est cette passion qui m'a conduit à poursuivre des
+                        études en informatique, où j'ai pu développer mes compétences et
+                        approfondir mes connaissances dans ce domaine en constante
+                        évolution.
+                    </p>
+                    <div class="image-container">
+                        <img src="Images/before.jpg" alt="Photo de Jerry Lubaki avant" loading="lazy" />
+                        <p class="subtitle">Avant</p>
+                    </div>
+                </div>
+                <div class="story-block fade-in-section">
+                    <p class="text-intro">
+                        Mon parcours académique m'a permis d'acquérir une solide base en
+                        programmation, en développement web, et en gestion de projets
+                        informatiques. J'ai également eu l'opportunité de travailler sur
+                        plusieurs projets passionnants, qui m'ont permis de mettre en
+                        pratique mes compétences et de collaborer avec d'autres passionnés
+                        de technologie.
+                    </p>
+                    <div class="image-container">
+                        <img src="Images/now.jpg" alt="Photo de Jerry Lubaki actuelle" loading="lazy" />
+                        <p class="subtitle">Actuel</p>
+                    </div>
+                </div>
+                <div class="story-block fade-in-section">
+                    <p class="text-intro">
+                        En dehors de mes études, je suis également un fervent défenseur de
+                        l'innovation et de la créativité dans le domaine de l'informatique.
+                        Je crois fermement que la technologie peut être utilisée pour
+                        résoudre des problèmes complexes et améliorer la vie des gens, et je
+                        suis déterminé à contribuer à cette mission à travers mon travail et
+                        mes projets futurs.
+                    </p>
+                    <div class="image-container">
+                        <img src="Images/future.png" alt="Photo de Jerry Lubaki dans le futur" loading="lazy" />
+                        <p class="subtitle">Ma vision pour le futur</p>
+                    </div>
+                </div>
+                <p class="text-outro">
                     Je suis ravi de partager mon parcours et mes réalisations à travers
                     ce portfolio, et j'espère que vous trouverez ici une meilleure
                     compréhension de qui je suis en tant qu'étudiant en informatique
                     appliquée et de ce que je peux apporter à l'avenir.
                 </p>
-            </div>
-            <div id="apropos-image">
-                <div class="image-container">
-                    <img src="/Images/before.jpg" alt="Photo de Jerry Lubaki avant" />
-                    <p class="subtitle">Avant</p>
-                </div>
-                <div class="image-container">
-                    <img src="/Images/now.jpg" alt="Photo de Jerry Lubaki actuelle" />
-                    <p class="subtitle">Actuel</p>
-                </div>
-                <div class="image-container">
-                    <img src="/Images/future.png" alt="Photo de Jerry Lubaki dans le futur" />
-                    <p class="subtitle">Ma vision pour le futur</p>
+
+                <!-- Mes valeurs -->
+                <section class="values-section fade-in-section">
+                    <h2>Ce qui me motive</h2>
+                    <div class="values-grid">
+                        <div class="value-card">
+                            <i class="fa-solid fa-lightbulb"></i>
+                            <h4>Innovation</h4>
+                            <p>Explorer de nouvelles technologies et repousser les limites du possible.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fa-solid fa-handshake"></i>
+                            <h4>Collaboration</h4>
+                            <p>Travailler ensemble pour créer des solutions plus riches et durables.</p>
+                        </div>
+                        <div class="value-card">
+                            <i class="fa-solid fa-book"></i>
+                            <h4>Apprentissage continu</h4>
+                            <p>Rester curieux et évoluer avec un domaine en constante mutation.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="about-cta">
+                    <a href="competences.html" class="btn">Voir mes compétences</a>
+                    <a href="contact.html" class="btn btn-outline">Me contacter</a>
                 </div>
             </div>
         </section>
     </main>
-    <footer>
+    <footer>   
         <p>&copy; 2026 Jerry Lubaki. Tous droits réservés.</p>
     </footer>
+    <button id="back-to-top" title="Retour en haut">↑</button>
     <script src="Script/Script.js"></script>
+    <script src="Script/animations.js"></script>
 </body>
 
 </html>

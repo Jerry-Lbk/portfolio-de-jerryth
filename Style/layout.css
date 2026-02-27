@@ -1,0 +1,167 @@
+/* ===== NAVIGATION ===== */
+#nav-bar {
+    background: rgba(0, 0, 0, 0.75);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid rgba(108, 169, 249, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 0.75rem 2rem;
+    transition: var(--transition);
+}
+#nav-bar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.25rem;
+}
+#nav-bar ul li {
+    padding: 0.5rem;
+    border-radius: var(--radius-sm);
+    position: relative;
+}
+#nav-bar a {
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: var(--transition);
+    position: relative;
+    padding: 0.35rem 0.75rem;
+}
+#nav-bar a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, var(--secondary-color), var(--btn-color));
+    border-radius: 2px;
+    transition: width var(--transition);
+}
+#nav-bar a:hover::after,
+#nav-bar .active::after {
+    width: 100%;
+}
+#nav-bar a:hover {
+    color: var(--secondary-color);
+}
+#nav-bar .active {
+    color: var(--btn-color);
+    font-weight: 700;
+}
+#nav-bar .active:hover {
+    color: var(--third-color);
+}
+#nav-bar a:focus-visible,
+#nav-bar button:focus-visible {
+    outline: 2px solid var(--secondary-color);
+    outline-offset: 3px;
+    border-radius: var(--radius-sm);
+}
+
+/* Logo */
+.logo img {
+    width: 48px;
+    height: 48px;
+    margin-left: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(108, 169, 249, 0.3);
+    transition: var(--transition);
+}
+.logo img:hover {
+    transform: scale(1.08);
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 20px rgba(108, 169, 249, 0.4);
+}
+
+/* Hero */
+#hero {
+    position: relative;
+    background: url('../Images/hero.jpg') no-repeat center center/cover;
+    height: 100vh;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--white);
+    text-align: center;
+    overflow: hidden;
+}
+#hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.4) 50%, rgba(108,169,249,0.08) 100%);
+    z-index: 1;
+}
+#hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(to top, var(--bg-color), transparent);
+    z-index: 1;
+}
+#hero > * {
+    position: relative;
+    z-index: 2;
+}
+#hero h1 {
+    font-size: clamp(2.25rem, 5vw, 3.5rem);
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-shadow: 0 2px 30px rgba(0,0,0,0.5);
+}
+#hero-name {
+    background: linear-gradient(135deg, var(--white) 0%, var(--secondary-color) 50%, var(--btn-color) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.hero-subtitle {
+    font-size: clamp(1rem, 2vw, 1.35rem);
+    color: var(--secondary-color);
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+.hero-description {
+    margin: 1.5rem 0 2rem;
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.85);
+    max-width: 450px;
+}
+.hero-cta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(135deg, rgba(199, 47, 199, 0.9) 0%, rgba(194, 0, 194, 0.85) 50%, rgba(108, 169, 249, 0.15) 100%);
+    color: var(--white);
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 4rem;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+footer p {
+    font-weight: 500;
+    opacity: 0.95;
+}
