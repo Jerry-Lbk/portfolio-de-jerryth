@@ -1,4 +1,8 @@
 /* ===== NAVIGATION ===== */
+.nav-overlay {
+    display: none;
+}
+
 #nav-bar {
     background: rgba(0, 0, 0, 0.75);
     backdrop-filter: blur(20px);
@@ -14,11 +18,59 @@
     padding: 0.75rem 2rem;
     transition: var(--transition);
 }
-#nav-bar ul {
+
+/* Bouton hamburger - caché par défaut (desktop) */
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 48px;
+    height: 48px;
+    padding: 10px;
+    background: transparent;
+    border: 1px solid rgba(108, 169, 249, 0.3);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: var(--transition);
+    z-index: 1001; /* Always above nav-menu and overlay */
+}
+
+/* keep pointer events on toggle when menu open */
+.nav-toggle[aria-expanded="true"] {
+    pointer-events: auto;
+}
+.nav-toggle:hover {
+    background: rgba(108, 169, 249, 0.1);
+    border-color: var(--secondary-color);
+}
+.hamburger {
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--secondary-color);
+    border-radius: 2px;
+    transition: transform var(--transition), opacity var(--transition), background var(--transition);
+}
+.nav-toggle[aria-expanded="true"] .hamburger:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.nav-toggle[aria-expanded="true"] .hamburger:nth-child(2) {
+    opacity: 0;
+}
+.nav-toggle[aria-expanded="true"] .hamburger:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+/* Menu desktop */
+.nav-menu {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 0.25rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
 }
 #nav-bar ul li {
     padding: 0.5rem;
@@ -67,6 +119,10 @@
 }
 
 /* Logo */
+.logo {
+    display: block;
+    text-decoration: none;
+}
 .logo img {
     width: 48px;
     height: 48px;

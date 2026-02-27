@@ -10,16 +10,22 @@
 </head>
 
 <body>
+    <div class="nav-overlay" id="nav-overlay" aria-hidden="true"></div>
     <nav id="nav-bar" aria-label="Menu principal">
-        <span class="logo">
-            <img src="Images/logo.jpg" alt="Logo du portfolio" />
-        </span>
-        <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="apropos.html">Mon histoire</a></li>
-            <li><a href="competences.html">Compétences</a></li>
-            <li><a href="projets.html" class="active">Mes projets</a></li>
-            <li><a href="contact.html">Me Contacter</a></li>
+        <a href="index.html" class="logo">
+            <img src="Images/logo.jpg" alt="Jerry Lubaki - Accueil" />
+        </a>
+        <button class="nav-toggle" id="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Ouvrir le menu">
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+            <span class="hamburger"></span>
+        </button>
+        <ul id="nav-menu" class="nav-menu" role="menubar" aria-hidden="true">
+            <li role="none"><a href="index.html" role="menuitem" tabindex="-1">Accueil</a></li>
+            <li role="none"><a href="apropos.html" role="menuitem" tabindex="-1">Mon histoire</a></li>
+            <li role="none"><a href="competences.html" role="menuitem" tabindex="-1">Compétences</a></li>
+            <li role="none"><a href="projets.html" class="active" role="menuitem" tabindex="-1">Mes projets</a></li>
+            <li role="none"><a href="contact.html" role="menuitem" tabindex="-1">Me Contacter</a></li>
         </ul>
     </nav>
     <main class="projets-page">

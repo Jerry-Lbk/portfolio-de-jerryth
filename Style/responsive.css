@@ -1,14 +1,87 @@
 /* ===== RESPONSIVE ===== */
+@media (max-width: 992px) {
+    /* Navbar mobile */
+    .nav-toggle {
+        display: flex;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: min(320px, 85vw);
+        height: 100vh;
+        height: 100dvh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+        background: linear-gradient(180deg, rgba(0,0,0,0.98) 0%, rgba(17,17,17,0.98) 100%);
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        border-left: 1px solid rgba(108, 169, 249, 0.15);
+        box-shadow: -10px 0 40px rgba(0,0,0,0.5);
+        padding: 5rem 2rem 2rem;
+        transition: right var(--transition), opacity var(--transition), visibility var(--transition), transform var(--transition);
+        z-index: 999;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .nav-menu.is-open {
+        right: 0;
+        opacity: 1;
+        visibility: visible;
+    }
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        padding: 0.5rem 0;
+        border-bottom: 1px solid rgba(108, 169, 249, 0.08);
+    }
+    .nav-menu li:last-child {
+        border-bottom: none;
+    }
+    .nav-menu a {
+        display: block;
+        padding: 1rem 1.5rem;
+        font-size: 1.1rem;
+    }
+    .nav-menu a::after {
+        display: none;
+    }
+    .nav-menu .active {
+        color: var(--btn-color);
+        background: rgba(199, 47, 199, 0.08);
+        border-radius: var(--radius-sm);
+    }
+    /* Overlay quand menu ouvert */
+    .nav-overlay {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 998;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: opacity var(--transition), visibility var(--transition);
+    }
+    .nav-overlay.is-visible {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 768px) {
     #nav-bar {
-        flex-direction: column;
-        padding: 1rem;
-        gap: 1rem;
-    }
-    #nav-bar ul {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 0.25rem;
+        padding: 0.75rem 1rem;
     }
     #hero h1 {
         font-size: clamp(1.75rem, 6vw, 2.5rem);
