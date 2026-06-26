@@ -85,7 +85,7 @@
     position: relative;
     padding: 0.35rem 0.75rem;
 }
-#nav-bar li a::after {
+#nav-bar a::after {
     content: '';
     position: absolute;
     width: 0;
